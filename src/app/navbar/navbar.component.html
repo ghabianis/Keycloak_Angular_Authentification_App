@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default nav-menu">
+  <div class="navbar-header">
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".button-menu">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse button-menu">
+    <ul class="nav navbar-nav">
+      <li><a href="#"><i class="fa fa-home"></i> HOME</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <span class="glyphicon glyphicon-user"></span> 
+          <strong>{{firstName}} {{lastName}}</strong>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <div class="navbar-login">
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="text-center">
+                    <img src="./assets/img/anis.jpg" height="100px" width="100px">
+                  </p>
+                </div>
+                <div class="col-lg-8">
+                  <p class="text-left"><strong>{{fullName}}</strong></p>
+                  <p class="text-left small">{{userName}}</p>
+                  <p class="text-left">
+                    <button class="btn btn-primary btn-block btn-sm" (click)="logout()">Logout</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="navbar-login navbar-login-session">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>
+                    <a routerLink="/profile" class="btn btn-primary btn-block">My Profile</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

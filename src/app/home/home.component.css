@@ -1,0 +1,38 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  color: black;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+
+}
+
+tr:nth-child(odd) {
+  color: black;
+}
+.thd{
+  align-items: center;
+}
+.text{
+  width: 800px;
+  height: 500px;
+  margin-left: -50%;
+}
+.tt{
+  margin-left: -50%;
+}
+.bt{
+  float: right;
+  margin-top: -2%;
+  z-index: 99;
+}
